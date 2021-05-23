@@ -5,9 +5,6 @@ function init() {
   const text = intro.querySelector("header");
   // INFO SECTION
   const infoBlock = document.querySelector(".info-block");
-  // END SECTION
-  const footerBlock = document.querySelector(".footer-block");
-  const end = footerBlock.querySelector("h1");
 
   //SCROLLMAGIC
   const controller = new ScrollMagic.Controller();

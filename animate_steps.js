@@ -10,8 +10,12 @@ function main() {
     $("#blob2").removeClass("animatedR");  
   })
 
-  $(".animated img").on('click', function() {
-    console.log('here');
+  $(".blobs .blob").on('click', function(e) {
+    const baseArticleName = '.info-content'
+    $('.info-content article').map((ind, el) => {
+      el.classList.remove('active')
+    });
+    $(`${baseArticleName}-${e.target.name}`).addClass('active');
   })
 
 }

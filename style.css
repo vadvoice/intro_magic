@@ -96,8 +96,8 @@ section {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border:5px solid white;
-  color: white;
+  border:5px solid rgb(143, 143, 143);
+  color: rgb(179, 168, 168);
   font-family: Verdana;
   font-weight: bold;
   font-size: 50px;
@@ -110,9 +110,21 @@ section {
   margin-top: 100px;
 }
 
+.info-content article {
+  text-align: center;
+}
+.info-content article h4 {
+  margin-bottom: 20px;
+}
+
 .info-content-artist,
 .info-content-webdev,
 .info-content-movie-maker {
   display: none;
 }
 
+.info-content-artist.active,
+.info-content-webdev.active,
+.info-content-movie-maker.active {
+  display: block;
+}
