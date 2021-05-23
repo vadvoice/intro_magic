@@ -1,0 +1,118 @@
+/******************* general ********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #212121;
+}
+
+/******************* header ********************/
+header {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
+  user-select: none;
+}
+
+header h1, small {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header h1,
+header small,
+header a {
+  color: white;
+}
+
+header h1 {
+  font-size: 80px;
+}
+
+header small {
+  transform: translate(-60%, 60px);
+}
+
+/******************* intro ********************/
+.intro {
+  height: 100vh;
+}
+
+.intro video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/******************* info block ********************/
+.info-block {
+  padding-top: 30vh;
+  position: relative;
+  height: 150vh;
+  color: #CFD8DC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section h1 {
+  text-align: center;
+  font-size: 80px;
+}
+
+section {
+  height: 100vh;
+}
+
+.info-block img {
+  border-radius: 50%;
+  width: 30vw;
+  max-width: 300px;
+}
+
+/******************* buttons ********************/
+.info-block .info-block-list {
+  position: relative;
+  padding: 0;
+  margin: 40px 0;
+}
+
+.info-block .info-block-list li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.info-block .info-block-list li img {
+  position: relative;
+  background: rebeccapurple;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border:5px solid white;
+  color: white;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 50px;
+  padding: 0;
+  margin: 0 20px;
+}
+
+.info-content {
+  min-height: 300px;
+  margin-top: 100px;
+}
+
+.info-content-artist,
+.info-content-webdev,
+.info-content-movie-maker {
+  display: none;
+}
+

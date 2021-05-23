@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./glues_nodes.css" />
+    <title>Intro</title>
+  </head>
+  <body>
+    <!-- PAGE 1 -->
+    <div class="intro">
+      <header class="">
+        <h1>VIZION ART</h1>
+        <small><a href="https://github.com/vadvoice" target="_blank">Vadym Shevchenko 2021©</a></small>
+      </header>
+      <video preload="auto" src="assets/videos/logo.mp4"></video>
+    </div>
+
+    <!-- PAGE 2 -->
+    <section class="info-block">
+      <h1>WHO AM I...</h1>
+
+      <!-- glue nodes -->
+      <div class="blobs">
+        <div id="blob1" class="blob">
+          <img src="https://img.icons8.com/ios/452/artist.png" alt="artist" title="Artist">
+        </div>
+        <div id="middle" class="blob">
+          <img src="http://cdn.onlinewebfonts.com/svg/img_543655.png" alt="webdev" title="Web developer">
+        </div>
+        <div id="blob2" class="blob">
+          <img src="https://icon-library.com/images/cinema-icon-png/cinema-icon-png-14.jpg" alt="movie maker" title="Dron pilot / Movie creator">
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="
+                                                          1 0 0 0 0  
+                                                          0 1 0 0 0  
+                                                          0 0 1 0 0  
+                                                          0 0 0 20 -8
+                                                          " result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+        </defs>
+      </svg>
+      
+      <div class="info-content">
+        <article class="info-content-artist">
+          <ul class="info-block-list">
+            <li>
+              <img src="https://scontent.flwo4-2.fna.fbcdn.net/v/t1.6435-9/62346631_206964060266111_7172170002169069568_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=174925&_nc_ohc=r7I-tdjxpd4AX-ud29x&_nc_ht=scontent.flwo4-2.fna&oh=e62a86103688bf23470014938cfabff6&oe=60D058E1" alt="old">
+            </li>
+            <li>
+              <img src="https://scontent-iev1-1.xx.fbcdn.net/v/t1.6435-9/82088055_253250335637483_2460159375977742336_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=174925&_nc_ohc=4Unn8_X2mckAX-F3ggV&_nc_ht=scontent-iev1-1.xx&oh=bf2b020b1abbaf4a1b7b4796f828951c&oe=60D1B91C" alt="stable">
+            </li>
+            <li>
+              <img src="https://scontent-iev1-1.xx.fbcdn.net/v/t1.6435-9/106386412_359229951706187_2113462882531565977_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=e3f864&_nc_ohc=23oRWypxJvkAX9Vt0Q2&_nc_ht=scontent-iev1-1.xx&oh=d062c4ffbd53ba641cde40f45a46d962&oe=60CE574B" alt="latest">
+            </li>
+          </ul>
+        </article>
+        <article class="info-content-webdev">
+          sdfsd
+        </article>
+        <article class="info-content-movie-maker">
+          here
+        </article>
+      </div>
+    </section>
+
+    <!-- PAGE 3 -->
+    <!-- TODO: -->
+    <!-- <footer class="footer-block">
+      <small>because I can</small>
+    </footer> -->
+    <!-- CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+      integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"
+      integrity="sha256-peenofh8a9TIqKdPKIeQE7mJvuwh+J0To7nslvpj1jI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"
+      integrity="sha256-31FC/OT6XpfjAhj9FuXjw5/wPXXawCAjJQ29E23/XPk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+      crossorigin="anonymous"
+    ></script>
+    
+    <script src="index.js"></script>
+    <script src="animate_steps.js"></script>
+  </body>
+</html>
