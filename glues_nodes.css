@@ -1,6 +1,6 @@
 .blobs {
   position: absolute;
-  top: 100px;
+  top: 90px;
   left: 0;
   bottom: 0;
   right: 0;  
@@ -9,6 +9,11 @@
   margin: auto;  
   filter: url("#goo");
 }
+
+.blobs.float {
+  animation: float 5s infinite;
+}
+
 .blobs:hover {
   width: 420px; 
 }
